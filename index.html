@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar | الموقع الشخصي</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family:  Cairo , sans-serif;
+            background-color: #090d16;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-effect {
+            box-shadow: 0 0 40px -10px rgba(56, 189, 248, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#090d16] text-slate-100">
+
+    <!-- خلفية جمالية ثابتة وخفيفة -->
+    <div class="fixed top-0 left-0 w-96 h-96 bg-sky-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- الشريط العلوي -->
+    <header class="w-full py-4 px-6 md:px-16 flex justify-between items-center glass-card border-b border-white/5 sticky top-0 z-50">
+        <h1 class="text-xl font-bold gradient-text">Omar Store</h1>
+        <nav class="hidden md:flex gap-8 text-sm font-semibold text-slate-300">
+            <a href="#services" class="hover:text-sky-400 transition">الخدمات</a>
+            <a href="#contact" class="hover:text-sky-400 transition">تواصل معي</a>
+        </nav>
+        <a href="https://wa.me/963931766054" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition shadow-lg shadow-sky-500/20">تواصل سريع</a>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="container mx-auto px-6 py-12 flex flex-col items-center text-center">
+        
+        <!-- أيقونة أو صورة بروفايل -->
+        <div class="relative mb-8 mt-4">
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-sky-400 via-indigo-500 to-purple-500 glow-effect">
+                <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-4xl md:text-5xl text-sky-400 font-black">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="absolute bottom-1 right-1 bg-emerald-500 w-5 h-5 rounded-full border-4 border-slate-900" title="متاح للعمل"></div>
+        </div>
+
+        <!-- العنوان والنبذة -->
+        <h2 class="text-3xl md:text-5xl font-black mb-4 tracking-tight">أهلاً بك، أنا <span class="gradient-text">Omar</span></h2>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
+            مطور ومزود خدمات رقمية. متخصص في برمجة بوتات تيليجرام وتصميم واجهات الويب لتلبية احتياجاتك التقنية بدقة وسرعة.
+        </p>
+
+        <!-- أزرار التفاعل -->
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <a href="#services" class="bg-sky-500 hover:bg-sky-600 text-white font-bold px-8 py-3 rounded-xl transition shadow-lg shadow-sky-500/25 flex items-center gap-2">
+                <i class="fa-solid fa-briefcase"></i> خدماتي ومهاراتي
+            </a>
+            <a href="#contact" class="glass-card hover:border-sky-500/50 text-slate-200 font-bold px-8 py-3 rounded-xl transition flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i> راسلني الآن
+            </a>
+        </div>
+
+        <!-- قسم الخدمات / المهارات -->
+        <section id="services" class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 text-right">
+            <!-- الكارت الأول: بوتات تيليجرام -->
+            <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-sky-500/30 transition group">
+                <div class="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center text-sky-400 text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-slate-200">برمجة بوتات تيليجرام</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">تطوير بوتات تيليجرام بمختلف أنواعها، مثل أنظمة المتاجر، إدارة الحسابات، والأتمتة المتكاملة.</p>
+            </div>
+            <!-- الكارت الثاني: تطوير وتصميم المواقع -->
+            <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-indigo-500/30 transition group">
+                <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-400 text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-slate-200">تصميم وتطوير المواقع</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">بناء مواقع تعريفية وصفحات هبوط عصرية متجاوبة وسريعة العرض.</p>
+            </div>
+            <!-- الكارت الثالث: الخدمات الرقمية -->
+            <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-purple-500/30 transition group">
+                <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-slate-200">الخدمات الرقمية</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">توفير حلول رقمية، وإدارة الاشتراكات، والخدمات التقنية المتنوعة بكفاءة عالية.</p>
+            </div>
+        </section>
+
+        <!-- قسم وسائل التواصل -->
+        <section id="contact" class="w-full max-w-xl glass-card p-8 rounded-3xl text-center border border-white/10 mb-10">
+            <h3 class="text-2xl font-bold mb-3">للتواصل والتعاون</h3>
+            <p class="text-slate-400 text-sm mb-6">يسعدني تواصلك معي مباشرة عبر التيليجرام أو الواتساب.</p>
+            
+            <div class="flex justify-center gap-4 text-xl">
+                <!-- رابط التليجرام -->
+                <a href="https://t.me/omar_xxxx" target="_blank" class="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-sky-400 hover:bg-sky-500 hover:text-white transition shadow-md" title="تيليجرام">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <!-- رابط الواتساب -->
+                <a href="https://wa.me/963931766054" target="_blank" class="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition shadow-md" title="واتساب">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="w-full py-6 text-center text-slate-500 text-xs border-t border-white/5 glass-card">
+        <p>جميع الحقوق محفوظة &copy; 2026 - Omar Store. تم التصميم والبرمجة بكل إتقان.</p>
+    </footer>
+
+</body>
+</html>
+
+      
